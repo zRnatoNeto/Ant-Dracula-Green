@@ -12,14 +12,14 @@ $lime: #50fa7a;
 $red: #ff5555;
 $orange: #ffb86c;
 $yellow: #f1fa8c;
-$purple: #bd93f9;
+$purple: #93f9bd;
 $darkpurple: #44475a;
 $cyan: #72BFD0;
 $blue: #13b1d5;
 $slider: #7b7bbd;
 
-$selected_fg_color: #f8f8f2;
-$selected_bg_color: #ff79c6;
+$selected_fg_color: #222222;
+$selected_bg_color: #8fff79;
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: if($variant == 'light', transparentize(rgb(156, 156, 156),0.8), transparentize(#191A22, 0.1));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));

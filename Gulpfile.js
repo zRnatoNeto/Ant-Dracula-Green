@@ -6,7 +6,7 @@ gulp.task('styles', function(done) {
     gulp.src('gtk-3.20/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gtk-3.20/'))
-        .pipe(exec(' gsettings set org.gnome.desktop.interface gtk-theme "Dracula"'))
+        .pipe(exec('gsettings set org.gnome.desktop.interface gtk-theme "Dracula-Green"'))
     done();
 });
 gulp.task('shell-style', function(done) {
@@ -14,7 +14,7 @@ gulp.task('shell-style', function(done) {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gnome-shell/'))
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Ant"'))
-        .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula"'))
+        .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula-Green"'))
     done();
 });
 
